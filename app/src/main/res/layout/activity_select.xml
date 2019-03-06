@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:paddingLeft="24dp"
+    android:paddingTop="56dp"
+    android:paddingRight="24dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kondisi Orang:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:gravity="center"/>
+
+    <RadioGroup
+        android:id="@+id/radioPilih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="2dp" >
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/kondisi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Percobaan Bunuh Diri"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent" />
+        <RadioButton
+            android:id="@+id/kondisi2"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="Melukai Diri" />
+        <RadioButton
+            android:id="@+id/kondisi3"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Melukai Orang Lain"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"/>
+        <RadioButton
+            android:id="@+id/kondisi4"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Merusak"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent" />
+        <RadioButton
+            android:id="@+id/kondisi5"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mengamuk"
+            android:checked="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"/>
+        <RadioButton
+            android:id="@+id/kondisi6"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="Gelisah/Perubahan Perilaku"/>
+        <RadioButton
+            android:id="@+id/kondisi7"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="20dp"
+            android:text="Gangguan Fisik/Sakit"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/kond_submit"
+        android:text="SUBMIT"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
